@@ -16,10 +16,12 @@ public class LogInPage {
 		this.driver=driver;
 	}
 
+	//We are creating parameter so that on the test class we can pass it as input
 	public void enterUserName(String userID) {
 		driver.findElement(loginIdXpath).sendKeys(userID);
 	}
 
+	//We are creating parameter so that on the test class we can pass it as input
 	public void enterPassword(String pass) {
 		driver.findElement(logInpsXpath).sendKeys(pass);
 	}
