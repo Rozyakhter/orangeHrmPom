@@ -44,7 +44,6 @@ public class TestingLogIn {
 		DashBoardPage logOut = new DashBoardPage(driver);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		logOut.clickOnLogout();
-		
 	}
 
 	@AfterTest
