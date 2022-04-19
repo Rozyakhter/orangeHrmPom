@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Rozy Kabir\AppData\Local\Temp\testng-eclipse-1454051283\testng-customsuite.xml</span>
+                    <span>C:\Users\Rozy Kabir\AppData\Local\Temp\testng-eclipse-444401174\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,6 +102,11 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
                     <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="orangeHrmPom.TestingLogIn" hash-for-method="checkInfo">checkInfo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="orangeHrmPom.TestingLogIn" hash-for-method="logIn">logIn</a> <!-- method navigator-link -->
@@ -132,9 +137,20 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="checkInfo">
+                  </a> <!-- checkInfo -->
+                  <span class="method-name">checkInfo</span>
+                  <em>
+(We are checking info)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="logIn">
                   </a> <!-- logIn -->
                   <span class="method-name">logIn</span>
+                  <em>
+(We are loggin into the application)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -142,6 +158,8 @@
                   <a name="logOut">
                   </a> <!-- logOut -->
                   <span class="method-name">logOut</span>
+                  <em>
+(We are logging out)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -149,7 +167,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Rozy Kabir\AppData\Local\Temp\testng-eclipse-1454051283\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Rozy Kabir\AppData\Local\Temp\testng-eclipse-444401174\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -198,20 +216,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'logIn')
 data.setCell(0, 2, 'orangeHrmPom.TestingLogIn')
-data.setCell(0, 3, 2335);
+data.setCell(0, 3, 2668);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'logOut')
+data.setCell(1, 1, 'checkInfo')
 data.setCell(1, 2, 'orangeHrmPom.TestingLogIn')
-data.setCell(1, 3, 1171);
+data.setCell(1, 3, 1508);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'logOut')
+data.setCell(2, 2, 'orangeHrmPom.TestingLogIn')
+data.setCell(2, 3, 850);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -244,15 +266,19 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">logIn</span>
-                <span class="method-start">6087 ms</span>
+                <span class="method-start">7314 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkInfo</span>
+                <span class="method-start">9992 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">logOut</span>
-                <span class="method-start">8432 ms</span>
+                <span class="method-start">11504 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">closeBorser</span>
-                <span class="method-start">9609 ms</span>
+                <span class="method-start">12361 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
