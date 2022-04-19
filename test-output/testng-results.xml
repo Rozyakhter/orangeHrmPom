@@ -1,29 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12803" started-at="2022-04-19T17:04:05 EDT" finished-at="2022-04-19T17:04:18 EDT">
+  <suite name="Default suite" duration-ms="12400" started-at="2022-04-19T17:36:51 EDT" finished-at="2022-04-19T17:37:04 EDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12803" started-at="2022-04-19T17:04:05 EDT" finished-at="2022-04-19T17:04:18 EDT">
+    <test name="Default test" duration-ms="12400" started-at="2022-04-19T17:36:51 EDT" finished-at="2022-04-19T17:37:04 EDT">
       <class name="orangeHrmPom.TestingLogIn">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:orangeHrmPom.TestingLogIn@b1ffe6]" name="setUp" is-config="true" duration-ms="7246" started-at="2022-04-19T17:04:05 EDT" finished-at="2022-04-19T17:04:13 EDT">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:orangeHrmPom.TestingLogIn@b1ffe6]" name="setUp" is-config="true" duration-ms="6393" started-at="2022-04-19T17:36:51 EDT" finished-at="2022-04-19T17:36:58 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="logIn()[pri:1, instance:orangeHrmPom.TestingLogIn@b1ffe6]" name="logIn" duration-ms="2668" started-at="2022-04-19T17:04:13 EDT" description="We are loggin into the application" finished-at="2022-04-19T17:04:15 EDT">
+        <test-method status="PASS" signature="logIn()[pri:1, instance:orangeHrmPom.TestingLogIn@b1ffe6]" name="logIn" duration-ms="2375" started-at="2022-04-19T17:36:58 EDT" description="We are loggin into the application" finished-at="2022-04-19T17:37:00 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logIn -->
-        <test-method status="PASS" signature="checkInfo()[pri:2, instance:orangeHrmPom.TestingLogIn@b1ffe6]" name="checkInfo" duration-ms="1508" started-at="2022-04-19T17:04:15 EDT" description="We are checking info" depends-on-methods="orangeHrmPom.TestingLogIn.logIn" finished-at="2022-04-19T17:04:17 EDT">
+        <test-method status="PASS" signature="checkInfo()[pri:2, instance:orangeHrmPom.TestingLogIn@b1ffe6]" name="checkInfo" duration-ms="1236" started-at="2022-04-19T17:37:00 EDT" description="We are checking info" depends-on-methods="orangeHrmPom.TestingLogIn.logIn" finished-at="2022-04-19T17:37:01 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInfo -->
-        <test-method status="PASS" signature="logOut()[pri:3, instance:orangeHrmPom.TestingLogIn@b1ffe6]" name="logOut" duration-ms="850" started-at="2022-04-19T17:04:17 EDT" description="We are logging out" depends-on-methods="orangeHrmPom.TestingLogIn.logIn" finished-at="2022-04-19T17:04:18 EDT">
+        <test-method status="PASS" signature="adminpage()[pri:3, instance:orangeHrmPom.TestingLogIn@b1ffe6]" name="adminpage" duration-ms="1146" started-at="2022-04-19T17:37:01 EDT" description="We are clicking adminPage" depends-on-methods="orangeHrmPom.TestingLogIn.logIn" finished-at="2022-04-19T17:37:03 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminpage -->
+        <test-method status="PASS" signature="logOut()[pri:4, instance:orangeHrmPom.TestingLogIn@b1ffe6]" name="logOut" duration-ms="793" started-at="2022-04-19T17:37:03 EDT" description="We are logging out" depends-on-methods="orangeHrmPom.TestingLogIn.logIn" finished-at="2022-04-19T17:37:03 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut -->
-        <test-method status="PASS" signature="closeBorser()[pri:0, instance:orangeHrmPom.TestingLogIn@b1ffe6]" name="closeBorser" is-config="true" duration-ms="431" started-at="2022-04-19T17:04:18 EDT" finished-at="2022-04-19T17:04:18 EDT">
+        <test-method status="PASS" signature="closeBorser()[pri:0, instance:orangeHrmPom.TestingLogIn@b1ffe6]" name="closeBorser" is-config="true" duration-ms="362" started-at="2022-04-19T17:37:03 EDT" finished-at="2022-04-19T17:37:04 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBorser -->

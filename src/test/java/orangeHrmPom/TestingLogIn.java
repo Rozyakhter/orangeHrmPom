@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
 
+import pages.AdminPage;
 import pages.DashBoardPage;
 import pages.LogInPage;
 import pages.MyInfo;
@@ -41,16 +42,21 @@ public class TestingLogIn {
 		login.clickOnLogIn();
 	}
 
-	@Test(priority = 2, dependsOnMethods = {"logIn"},
-	description = "We are checking info")
+	@Test(priority = 2, dependsOnMethods = { "logIn" }, description = "We are checking info")
 	public void checkInfo() {
 		MyInfo info = new MyInfo(driver);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		info.clickOnInfo();
 	}
 
-	@Test(priority = 3, dependsOnMethods = {"logIn"},
-			description = "We are logging out")
+	@Test(priority = 3, dependsOnMethods = { "logIn" }, description = "We are clicking adminPage")
+	public void adminpage() {
+		AdminPage admin = new AdminPage(driver);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		admin.clickOnAdmin();
+	}
+
+	@Test(priority = 4, dependsOnMethods = { "logIn" }, description = "We are logging out")
 	public void logOut() {
 		DashBoardPage logOut = new DashBoardPage(driver);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
