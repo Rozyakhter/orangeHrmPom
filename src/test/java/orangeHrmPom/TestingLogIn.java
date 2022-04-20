@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.*;
 
 import pages.AdminPage;
@@ -17,18 +18,28 @@ public class TestingLogIn {
 
 	static String chromeDriver = "webdriver.chrome.driver";
 	static String driverLocation = "C:\\Users\\Rozy Kabir\\Desktop\\rozy\\chromedriver.exe";
+	static String firefoxDriver = "webdriver.gecko.driver";
+	static String ffdriverLocation = "C:\\Users\\Rozy Kabir\\Desktop\\rozy\\geckodriver.exe";
 	static String url = "https://opensource-demo.orangehrmlive.com/index.php/auth/validateCredentials";
 
-	@BeforeTest
-	public void setUp() {
-		System.setProperty(chromeDriver, driverLocation);
-		driver = new ChromeDriver();
+	@Parameters("browser")
+	@BeforeClass
+	public void setUp(String browser) {
+		if (browser.equalsIgnoreCase("chrome")) {
+			System.setProperty(chromeDriver, driverLocation);
+			driver = new ChromeDriver();
+			
+		} else if (browser.equalsIgnoreCase("firefox")) {
+			System.setProperty(firefoxDriver, ffdriverLocation);
+			driver = new FirefoxDriver();
+		}
+
 		driver.manage().window().maximize();
 		driver.get(url);
 	}
 
 	@Test(priority = 1, description = "We are loggin into the application")
-	public void logIn() throws Exception {
+	public void logIn() {
 		/*
 		 * Since we have created object of the LogInPage, we have to pass driver as the
 		 * param Therefore internally how it would work is; 1. It will get the driver

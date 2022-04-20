@@ -5,8 +5,11 @@
     <classes>
       <class name="orangeHrmPom.TestingLogIn">
         <methods>
+          <include name="logOut"/>
+          <include name="adminpage"/>
           <include name="setUp"/>
           <include name="logIn"/>
+          <include name="checkInfo"/>
           <include name="closeBorser"/>
         </methods>
       </class> <!-- orangeHrmPom.TestingLogIn -->
