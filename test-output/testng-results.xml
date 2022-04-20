@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="parallel testing" duration-ms="20835" started-at="2022-04-20T15:31:09 EDT" finished-at="2022-04-20T15:31:30 EDT">
+  <suite name="parallel testing" duration-ms="22286" started-at="2022-04-20T16:02:03 EDT" finished-at="2022-04-20T16:02:25 EDT">
     <groups>
     </groups>
-    <test name="Chrome" duration-ms="16140" started-at="2022-04-20T15:31:09 EDT" finished-at="2022-04-20T15:31:25 EDT">
+    <test name="Chrome" duration-ms="15189" started-at="2022-04-20T16:02:03 EDT" finished-at="2022-04-20T16:02:18 EDT">
       <class name="orangeHrmPom.TestingLogIn">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:orangeHrmPom.TestingLogIn@1440df3]" name="setUp" is-config="true" duration-ms="6764" started-at="2022-04-20T15:31:09 EDT" finished-at="2022-04-20T15:31:16 EDT">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:orangeHrmPom.TestingLogIn@1440df3]" name="setUp" is-config="true" duration-ms="6284" started-at="2022-04-20T16:02:03 EDT" finished-at="2022-04-20T16:02:09 EDT">
           <params>
             <param index="0">
               <value>
@@ -18,31 +18,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="logIn()[pri:1, instance:orangeHrmPom.TestingLogIn@1440df3]" name="logIn" duration-ms="3075" started-at="2022-04-20T15:31:16 EDT" description="We are loggin into the application" finished-at="2022-04-20T15:31:19 EDT">
+        <test-method status="PASS" signature="logIn()[pri:1, instance:orangeHrmPom.TestingLogIn@1440df3]" name="logIn" duration-ms="3682" started-at="2022-04-20T16:02:09 EDT" description="We are loggin into the application" finished-at="2022-04-20T16:02:13 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logIn -->
-        <test-method status="PASS" signature="checkInfo()[pri:2, instance:orangeHrmPom.TestingLogIn@1440df3]" name="checkInfo" duration-ms="2643" started-at="2022-04-20T15:31:19 EDT" description="We are checking info" depends-on-methods="orangeHrmPom.TestingLogIn.logIn" finished-at="2022-04-20T15:31:22 EDT">
+        <test-method status="PASS" signature="checkInfo()[pri:2, instance:orangeHrmPom.TestingLogIn@1440df3]" name="checkInfo" duration-ms="2601" started-at="2022-04-20T16:02:13 EDT" description="We are checking info" depends-on-methods="orangeHrmPom.TestingLogIn.logIn" finished-at="2022-04-20T16:02:15 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInfo -->
-        <test-method status="PASS" signature="adminpage()[pri:3, instance:orangeHrmPom.TestingLogIn@1440df3]" name="adminpage" duration-ms="1726" started-at="2022-04-20T15:31:22 EDT" description="We are clicking adminPage" depends-on-methods="orangeHrmPom.TestingLogIn.logIn" finished-at="2022-04-20T15:31:24 EDT">
+        <test-method status="PASS" signature="adminpage()[pri:3, instance:orangeHrmPom.TestingLogIn@1440df3]" name="adminpage" duration-ms="1467" started-at="2022-04-20T16:02:15 EDT" description="We are clicking adminPage" depends-on-methods="orangeHrmPom.TestingLogIn.logIn" finished-at="2022-04-20T16:02:17 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- adminpage -->
-        <test-method status="PASS" signature="logOut()[pri:4, instance:orangeHrmPom.TestingLogIn@1440df3]" name="logOut" duration-ms="1006" started-at="2022-04-20T15:31:24 EDT" description="We are logging out" depends-on-methods="orangeHrmPom.TestingLogIn.logIn" finished-at="2022-04-20T15:31:25 EDT">
+        <test-method status="PASS" signature="logOut()[pri:4, instance:orangeHrmPom.TestingLogIn@1440df3]" name="logOut" duration-ms="903" started-at="2022-04-20T16:02:17 EDT" description="We are logging out" depends-on-methods="orangeHrmPom.TestingLogIn.logIn" finished-at="2022-04-20T16:02:18 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut -->
-        <test-method status="PASS" signature="closeBorser()[pri:0, instance:orangeHrmPom.TestingLogIn@1440df3]" name="closeBorser" is-config="true" duration-ms="822" started-at="2022-04-20T15:31:25 EDT" finished-at="2022-04-20T15:31:25 EDT">
+        <test-method status="PASS" signature="closeBorser()[pri:0, instance:orangeHrmPom.TestingLogIn@1440df3]" name="closeBorser" is-config="true" duration-ms="130" started-at="2022-04-20T16:02:18 EDT" finished-at="2022-04-20T16:02:18 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBorser -->
       </class> <!-- orangeHrmPom.TestingLogIn -->
     </test> <!-- Chrome -->
-    <test name="Firefox" duration-ms="20835" started-at="2022-04-20T15:31:09 EDT" finished-at="2022-04-20T15:31:30 EDT">
+    <test name="Firefox" duration-ms="22286" started-at="2022-04-20T16:02:03 EDT" finished-at="2022-04-20T16:02:25 EDT">
       <class name="orangeHrmPom.TestingLogIn">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:orangeHrmPom.TestingLogIn@173f6d9]" name="setUp" is-config="true" duration-ms="13239" started-at="2022-04-20T15:31:09 EDT" finished-at="2022-04-20T15:31:23 EDT">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:orangeHrmPom.TestingLogIn@173f6d9]" name="setUp" is-config="true" duration-ms="13371" started-at="2022-04-20T16:02:03 EDT" finished-at="2022-04-20T16:02:16 EDT">
           <params>
             <param index="0">
               <value>
@@ -53,23 +53,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="logIn()[pri:1, instance:orangeHrmPom.TestingLogIn@173f6d9]" name="logIn" duration-ms="2742" started-at="2022-04-20T15:31:23 EDT" description="We are loggin into the application" finished-at="2022-04-20T15:31:25 EDT">
+        <test-method status="PASS" signature="logIn()[pri:1, instance:orangeHrmPom.TestingLogIn@173f6d9]" name="logIn" duration-ms="2566" started-at="2022-04-20T16:02:16 EDT" description="We are loggin into the application" finished-at="2022-04-20T16:02:19 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logIn -->
-        <test-method status="PASS" signature="checkInfo()[pri:2, instance:orangeHrmPom.TestingLogIn@173f6d9]" name="checkInfo" duration-ms="933" started-at="2022-04-20T15:31:25 EDT" description="We are checking info" depends-on-methods="orangeHrmPom.TestingLogIn.logIn" finished-at="2022-04-20T15:31:26 EDT">
+        <test-method status="PASS" signature="checkInfo()[pri:2, instance:orangeHrmPom.TestingLogIn@173f6d9]" name="checkInfo" duration-ms="1034" started-at="2022-04-20T16:02:19 EDT" description="We are checking info" depends-on-methods="orangeHrmPom.TestingLogIn.logIn" finished-at="2022-04-20T16:02:20 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInfo -->
-        <test-method status="PASS" signature="adminpage()[pri:3, instance:orangeHrmPom.TestingLogIn@173f6d9]" name="adminpage" duration-ms="1010" started-at="2022-04-20T15:31:26 EDT" description="We are clicking adminPage" depends-on-methods="orangeHrmPom.TestingLogIn.logIn" finished-at="2022-04-20T15:31:27 EDT">
+        <test-method status="PASS" signature="adminpage()[pri:3, instance:orangeHrmPom.TestingLogIn@173f6d9]" name="adminpage" duration-ms="1283" started-at="2022-04-20T16:02:20 EDT" description="We are clicking adminPage" depends-on-methods="orangeHrmPom.TestingLogIn.logIn" finished-at="2022-04-20T16:02:21 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- adminpage -->
-        <test-method status="PASS" signature="logOut()[pri:4, instance:orangeHrmPom.TestingLogIn@173f6d9]" name="logOut" duration-ms="852" started-at="2022-04-20T15:31:27 EDT" description="We are logging out" depends-on-methods="orangeHrmPom.TestingLogIn.logIn" finished-at="2022-04-20T15:31:28 EDT">
+        <test-method status="PASS" signature="logOut()[pri:4, instance:orangeHrmPom.TestingLogIn@173f6d9]" name="logOut" duration-ms="1529" started-at="2022-04-20T16:02:21 EDT" description="We are logging out" depends-on-methods="orangeHrmPom.TestingLogIn.logIn" finished-at="2022-04-20T16:02:22 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut -->
-        <test-method status="PASS" signature="closeBorser()[pri:0, instance:orangeHrmPom.TestingLogIn@173f6d9]" name="closeBorser" is-config="true" duration-ms="1991" started-at="2022-04-20T15:31:28 EDT" finished-at="2022-04-20T15:31:30 EDT">
+        <test-method status="PASS" signature="closeBorser()[pri:0, instance:orangeHrmPom.TestingLogIn@173f6d9]" name="closeBorser" is-config="true" duration-ms="2428" started-at="2022-04-20T16:02:22 EDT" finished-at="2022-04-20T16:02:25 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBorser -->
