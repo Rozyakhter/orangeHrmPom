@@ -4,10 +4,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 //In this class we wil keep all locators and page actions
-public class LogInPage {
+public class LogInPage extends BasePage {
 
-	//Here we are setting the driver as a global variable
-	WebDriver driver;
+
+	
 	
 	//We are storing the locator inside By class
 	By loginIdXpath = By.xpath("//input[@id='txtUsername']");
@@ -20,8 +20,8 @@ public class LogInPage {
 	 * to the test class. In this way we will pass constructor in all other pages classes*/	
 	
 	public LogInPage(WebDriver driver) {
-		//Here we are matching the local variable with the global variable
-		this.driver = driver;
+		
+		super(driver);
 	}
 
 	//We are creating parameter so that on the test class we can pass it as input

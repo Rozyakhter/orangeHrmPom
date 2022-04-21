@@ -25,15 +25,17 @@ public class TestingLogIn {
 	public void setUp(String browser) {
 		if (browser.equalsIgnoreCase("chrome")) {
 			System.setProperty(chromeDriver, driverLocation);
-			driver = new ChromeDriver();
-			
-		} else if (browser.equalsIgnoreCase("firefox")) {
+			driver = new ChromeDriver();	
+		} 
+		
+		else if (browser.equalsIgnoreCase("firefox")) {
 			System.setProperty(firefoxDriver, ffdriverLocation);
 			driver = new FirefoxDriver();
 		}
 
 		driver.manage().window().maximize();
 		driver.get(url);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 
 	@Test(priority = 1, description = "We are loggin into the application")

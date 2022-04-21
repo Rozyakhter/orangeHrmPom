@@ -3,13 +3,12 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class AdminPage {
-
-	WebDriver driver;
+public class AdminPage extends BasePage  {
+	
 	By adminXpath = By.xpath("//*[@id=\'menu_admin_viewAdminModule\']/b");
 	
 	public AdminPage(WebDriver driver) {
-		this.driver = driver;
+		super(driver);
 	}
 	
 	public void clickOnAdmin() {

@@ -5,15 +5,13 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class DashBoardPage {
-
-	WebDriver driver;
+public class DashBoardPage extends BasePage {
 	
 	By welcomeXpath = By.xpath("//*[@id=\"welcome\"]");
 	By logoutXpath = By.xpath("//*[@id=\'welcome-menu\']/ul/li[3]/a");
 	
 	public DashBoardPage(WebDriver driver){
-		this.driver = driver;
+		super(driver);
 		
 	}
 	public void clickOnLogout() {
